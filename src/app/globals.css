@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Esconder as setas do React-Quill */
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before,
+.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: none !important;
+}
+
+.ql-snow .ql-picker-label .ql-picker-arrow,
+.ql-snow .ql-picker-item .ql-picker-arrow {
+  visibility: hidden !important;
+}
+
+.ql-snow .ql-picker-label:after, .ql-snow .ql-picker-item:after {
+  border: none !important;
+}
+
+.ql-toolbar .ql-picker-label:after, .ql-toolbar .ql-picker-item:after {
+    display: none !important;
+}
+
+/* Nova regra para ocultar o elemento polygon diretamente */
+.ql-stroke {
+    display: none !important;
+}

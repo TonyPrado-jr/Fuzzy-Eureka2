@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status do Projeto EbookStark</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        .status-section {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .status-item {
+            margin-bottom: 10px;
+        }
+        .status-item strong {
+            color: #007bff;
+        }
+        .completed {
+            color: green;
+            font-weight: bold;
+        }
+        .in-progress {
+            color: orange;
+            font-weight: bold;
+        }
+        .pending {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Status do Projeto EbookStark</h1>
+
+    <div class="status-section">
+        <h2>Visão Geral do Projeto</h2>
+        <p><strong>Nome do Projeto:</strong> EbookStark</p>
+        <p><strong>Objetivo:</strong> Criar uma plataforma web para usuários criarem ebooks com capa, contracapa, índices e assinarem planos.</p>
+        <p><strong>Planos de Páginas:</strong></p>
+        <ul>
+            <li><strong>Experimente gratuitamente:</strong> até 10 páginas</li>
+            <li><strong>Básico:</strong> até 30 páginas</li>
+            <li><strong>Intermediário:</strong> até 50 páginas</li>
+            <li><strong>Platinium Stark:</b> todas as páginas</li>
+        </ul>
+        <p><strong>Comparativo:</strong> Inspirado em <a href="https://ebookmaker.ai/pt-BR" target="_blank">ebookmaker.ai</a>, incluindo padrões de cookies e políticas de privacidade.</p>
+    </div>
+
+    <div class="status-section">
+        <h2>Fases do Projeto</h2>
+        <div class="status-item">
+            <strong>Fase 1: Estrutura e Página Inicial (Landing Page)</strong> <span class="completed">(Concluída)</span>
+            <ul>
+                <li>Configuração do Projeto Next.js: <span class="completed">Concluído (Configuração Manual)</span></li>
+                <li>Criação da Página de Status (project_status.html): <span class="completed">Concluído</span></li>
+                <li>Implementação da Estrutura da Página Inicial: <span class="completed">Concluído</span></li>
+                <li>Design da Seção Hero: <span class="completed">Concluído</span></li>
+                <li>Destaque de Recursos: <span class="completed">Concluído</span></li>
+                <li>Seção de Planos: <span class="completed">Concluído</span></li>
+                <li>Rodapé com Links para Políticas: <span class="completed">Concluído</span></li>
+                <li>Melhorias Estéticas Adicionais: <span class="completed">Concluído</span>
+                    <ul>
+                        <li>Remover texto "🇧🇷 Feito no Brasil 🇧🇷": <span class="completed">Concluído</span></li>
+                        <li>Alterar cores das fontes para cores da bandeira do Brasil: <span class="completed">Concluído</span></li>
+                        <li>Aumentar texto "Inteligência Artificial" em 40%: <span class="completed">Concluído</span></li>
+                        <li>Remover quantidades de páginas dos planos: <span class="completed">Concluído</span></li>
+                        <li>Corrigir "Ebook" para "E-book": <span class="completed">Concluído</span></li>
+                        <li>Remover opções de suporte dos planos: <span class="completed">Concluído</span></li>
+                        <li>Configuração do ESLint: <span class="completed">Concluído</span></li>
+                    </ul>
+                </li>
+                <li>Seção "E-books de Sucesso": <span class="completed">Concluído</span></li>
+                <li>Seção "Vídeo de Apresentação": <span class="completed">Concluído</span></li>
+                <li>Componentes de Consentimento de Cookies: <span class="pending">Pendente</span></li>
+            </ul>
+        </div>
+        <div class="status-item">
+            <strong>Fase 2: Funcionalidades de Criação de E-book</strong> <span class="in-progress">(Em Progresso)</span>
+            <ul>
+                <li>Editor de Conteúdo:
+                    <ul>
+                        <li>Integração básica do editor de texto rico: <span class="completed">Concluído</span></li>
+                        <li>Adicionar campos de Assunto e Título do E-book: <span class="completed">Concluído</span></li>
+                        <li>Adicionar botão "Gerar E-book": <span class="completed">Concluído</span></li>
+                        <li>Ajustar layout dos campos de entrada e botão "Gerar E-book": <span class="completed">Concluído</span></li>
+                        <li>Controlar visibilidade do editor de conteúdo: <span class="completed">Concluído</span></li>
+                        <li>Preencher editor com conteúdo gerado (placeholder): <span class="completed">Concluído</span></li>
+                        <li>Adicionar validação de campos em branco: <span class="completed">Concluído</span></li>
+                        <li>Reverter para alert() nativo: <span class="completed">Concluído</span></li>
+                    </ul>
+                </li>
+                <li>Ferramentas de Livro:
+                    <ul>
+                        <li>Capa: <span class="completed">Concluído</span></li>
+                        <li>Contracapa: <span class="completed">Concluído</span></li>
+                        <li>Índice Descritivo: <span class="completed">Concluído</span></li>
+                        <li>Posfácio (para planos pagos): <span class="completed">Concluído</span></li>
+                        <li>Apêndices (para planos pagos): <span class="completed">Concluído</span></li>
+                        <li>Glossário (para planos pagos): <span class="in-progress">Em Progresso</span></li>
+                        <li>Bibliografia (para planos pagos): <span class="pending">Pendente</span></li>
+                    </ul>
+                </li>
+                <li>Geração de Índice</li>
+                <li>Exportação de E-book</li>
+            </ul>
+        </div>
+        <div class="status-item">
+            <strong>Fase 3: Gerenciamento de Usuários e Planos</strong> <span class="pending">(Pendente)</span>
+            <ul>
+                <li>Autenticação de Usuários</li>
+                <li>Gerenciamento de Assinaturas</li>
+                <li>Integração com Pagamento</li>
+            </ul>
+        </div>
+        <div class="status-item">
+            <strong>Fase 4: Políticas e Conformidade</strong> <span class="pending">(Pendente)</span>
+            <ul>
+                <li>Página de Política de Privacidade</li>
+                <li>Página de Termos de Uso</li>
+                <li>Implementação de Banner de Cookies</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="status-section">
+        <h2>Próximos Passos</h2>
+        <p>Vamos começar a implementar a estrutura da página inicial (landing page) do EbookStark.</p>
+    </div>
+</body>
+</html>
